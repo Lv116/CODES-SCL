@@ -1,21 +1,14 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed May  1 08:17:00 2019
-
-@author: SCL1
-"""
-#practical 4
-
 def Intro_thingy():
-    n =input("Enter Name")
-    #takes name
-    a = int(input("Enter Age"))
-    #takes age
-    c = int(input("Enter Class"))
-    #takes class
-    print("Welcome",n)
-    print("I am", a ,"and studying in class", c)
-    print("Last year I was", a-1 , "years old.")
-    #prints data
+
+    n =input("Enter Name- ")
+    a = int(input("Enter Age- "))
+    c = int(input("Enter Class- "))
+
+    print(f'    Welcome, {n.capitalize()} \n\
+    I am {a} and studying in class {c}\n\
+    Last year I was {a-1} years old.')
+    if(c>12):
+        print('Seriously? Since, when was there a class {c}?')
+
 Intro_thingy()  
     

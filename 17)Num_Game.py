@@ -1,23 +1,15 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May 28 11:41:15 2019
-
-@author: vyom
-"""
 def gamez():
-    
     import random
     for x in range(1):
-        x = random.randint(1,21)
+        x = random.randint(1,20)
         chance=0
         g=0
-        print("Welcome to the number guessing Game(Only 3 changes allowed)")
+        print("\nWelcome to the number guessing Game(Only 3 changes allowed)")
         name=input("Hi, What is your Name?- ")
-        print("Well,",name,"I have chosen a number between 1 and 20")
+        print(f"Well {name.capitalize()}, I have chosen a number between 1 and 20\nYou have three chances to try and guess it.")
         if (g==x):
             chance += 1
-            print("Good job.",name,"Your answer is correct and you guessed my no. in ", chance,"chances :)")
+            print("Good job. {name.capitalize()} ,Your answer is correct and you guessed my no. in {chance} chances :)")
         
         while(g!=x and chance<3):
             print("Take a guess")
@@ -36,7 +28,7 @@ def gamez():
         replay()
         
 def replay():
-    print ("if you want to play again type '1' and if you want to leave type '0'")
+    print ("\n\nIf you want to play again type '1' and if you want to leave type '0'")
     c=(input(""))
     if(c=='1'):
         print("LOADING.....")

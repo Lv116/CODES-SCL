@@ -1,40 +1,38 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 20 11:15:45 2019
-
-@author: SCL1
-"""
-
 def calculator():
-    a = int(input('Enter First  number: '))
-    b = int(input('Enter Second number: '))
-    op = input(''' 
- Enter the operator you want to use:
+    c = input('Enter First  number: ')
+    d = input('Enter Second number: ')
+    if(c.isdigit() and d.isdigit()):
+        op = input('''
+Enter the operator you want to use:
                           (+ for addition
                           - for subtraction
                           * for multiplication
                           / for division) 
                           ''')
-
-    if (op == '+'):
-        print( "=>" ,a , "+" , b)
-        print(a + b)
-
-    elif (op == '-'):
-        print( "=>" ,a , "-" , b)
-        print( a - b)
-
-    elif (op == '*'):
-        print( "=>" ,a , "*" , b)
-        print(a * b)
-
-    elif (op == '/'):
-        print( "=>" ,a , "/" , b)
-        print( a / b)
-
+    
+        a=int(c)
+        b=int(d)
+        if (op == '+'):
+            print( "=>" ,a , "+" , b)
+            print(a + b)
+        elif (op == '-'):
+            print( "=>" ,a , "-" , b)
+            print( a - b)
+        elif (op == '*'):
+            print( "=>" ,a , "*" , b)
+            print(a * b)
+        elif (op == '/'):
+            print( "=>" ,a , "/" , b)
+            if(b!=0):
+                print( a / b)
+            else:
+                print('0 ,Math_Error: Zero Division')
+        else:
+            print('Invalid operator...')
+        retry()
     else:
-        print('Invalid operator...')
-    retry()
+        print('ERROR, plz enter a NUMBER')
+        retry()
 
 def retry():
     A= input('''

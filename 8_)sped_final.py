@@ -1,10 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May  7 09:28:17 2019
-
-@author: SCL1
-"""
 def ticket():
+
     def Speed1():
         if(v>=86):
             print ("You got a big ticket","2= big ticket")
@@ -25,7 +20,6 @@ def ticket():
     
 
     v=int(input('Enter speed'))
-    
     A=int(input('If you have your birthday type 1 and if not type 0.')) 
 
     if (A == 1):

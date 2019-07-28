@@ -1,17 +1,11 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 25 23:51:00 2019
-
-@author: vyom
-"""
-
 def SI():
-      
- p = eval(input("Enter the principle amount- ")
- r = eval(input("Enter the rate of interest-"))
- t = eval(input("Enter Time Span (in years) for which you deposited the amount- ")
- si= p * r * t/ 100
- print("Simple interest = Rs.", interest)
+    
+    p = input("Enter the principle amount- ")
+    r = input("Enter the rate of interest-")
+    t = input("Enter Time Span (in years) for which you deposited the amount- ")
+    if (p.isalpha() or r.isalpha() or t.isalpha()):
+        print('ERROR! :(')
+    else:
+        print(f'The Interest is {eval(p) * eval(r) * eval(t) /100}')
 
 SI()

@@ -32,18 +32,15 @@ def frequency():
         else:
             freq[i]=1
     print(f'frequency of each character in "{st1}" is -\n {str(freq)}')
-
 def highest_length():
     st = input('Enter the string you want to operate-\n')
     m=st.split(' ')
     word =  max(m, key=len)
     print(f'The longest word is-"{word}"of length = {len(word)}')
-
 def Title():
     st = input('Enter the string you want to operate-\n')
     m=st.title()
     print(m)
-    
 def Name():
     st = input('Enter the string you want to operate-\n')
     m=st.split(' ')
@@ -53,10 +50,7 @@ def Name():
         n+=(l[0].upper()+' ')
     n+=m[-1].title()
     print(f'The initials are\n{n}')
-        
-
-
-
+    
 def retry():
     A= input('''
 Do you want to use the string converter again?

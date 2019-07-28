@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 25 09:13:37 2019
-
-@author: SCL1
-"""
 def vowel():
     inp=input('Enter string-\n')
     x=inp.split(' ')

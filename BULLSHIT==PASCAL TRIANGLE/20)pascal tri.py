@@ -1,11 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 25 22:42:31 2019
-
-@author: vyom
-"""
-n=int(input("Enter number of rows in the Pascaline Triangle"))
+n=int(input("Enter number of rows in the Pascaline Triangle-"))
 p=[]
 for i in range(n):
     p.append([])

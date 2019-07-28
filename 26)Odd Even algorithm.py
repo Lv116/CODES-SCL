@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 25 00:57:37 2019
-
-@author: vyom
-"""
-
 def algo_num_list():
     a= eval(input("Enter the number"))
     

@@ -1,25 +1,14 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May 28 08:32:52 2019
-
-@author: vyom
-"""
-
 def palindrome_check():
-    a_1 = int(input("Enter the no. you want to check"))
-    b = a_1
-    a_2 = 0
-    
+    a = int(input("Enter the no. you want to check-\n"))
+    b = a
+    c = 0
     while(b>0):
-        a_2 = a_2 * 10 + b%10
+        c = c * 10 + b%10
         b = b//10
-        
-    if(a_2 == a_1):
-       
-        print("The entered no. is a Palindrome")
+    if(c == a):
+        print(f"The entered no. ({a}) is a Palindrome.",end="\n\n")
     else:
-        print("The entered no. isn't a Palindrome")
+        print(f"The entered no.({a}) isn't a Palindrome.",end="\n\n")
     retry()
 
 def retry():

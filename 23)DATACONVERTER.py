@@ -1,12 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jul  9 09:05:31 2019
-
-@author: SCL1ss
-"""
 def datacv():
     
-    inp = eval(input('Enter the No. you want to convert....-'))
+    inp = int(input('Enter the No. you want to convert....-'))
     print('Conversion type key-\n B-Binary \n O-Octal \n H-Hexadecimal')
     typ = input("Which type of conversion do you want to execute...-")
     a = inp 
@@ -49,4 +43,16 @@ def datacv():
     s = [str(i) for i in ls]          
     res= ["".join(s)]
     print(res[0])
+    retry()
+def retry():
+    A= input('''
+Do you want to use the converter again?
+Please type 1 for YES or 0 for NO.
+''')
+    if (A == '1'):
+        datacv()
+    elif(A == '0'):
+        print('Bye...')
+    else:
+        retry()
 datacv()

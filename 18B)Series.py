@@ -1,21 +1,13 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May 28 13:05:45 2019
-
-@author: vyom
-"""
 import math
 def Series_B():
+    print('You can compute the sum of the series- 1/sqrt(2)+2/sqrt(3)+....+n/sqrt(n+1)')
     n = int(input("Enter desired value of n..:-"))
-    m=0
+    m=1
     s=0
     while(m<=n):
-        s = s + m/math.sqrt(m+1)
-        m = m + 1
-    print(s)
-  
-
+        s += m/math.sqrt(m+1)
+        m += 1
+    print(f'sum of series is {s}')
 Series_B()
     
 
